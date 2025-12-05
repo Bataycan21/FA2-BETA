@@ -1,60 +1,165 @@
-/* === General Carousel Styling === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d2f7c1;
+}
+
+.hero {
+  background-color: #d2f7c1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero .logo {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #2E7D32;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.cta:hover {
+  background-color: #256628;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.visual {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.visual img {
+  max-width: 90%;
+  border-radius: 12px;
+}
+
 .carousel {
-  background-color: #f1f1f1;
+  background-color: #85db81;
   padding: 60px 20px;
 }
 
 .carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
-  position: relative;
 }
 
-/* === Carousel Box Styling (New Design) === */
 .carousel-box {
-  background-color: #f9f9f9;
-  border: 2px dotted #ccc;
-  border-radius: 15px;
-  padding: 30px;
+  background-color: #ffffff;
+  border: 2px dotted #c7c7c7;
+  border-radius: 18px;
+  padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  flex: 1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
 .carousel-box h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 15px;
   color: #2E7D32;
 }
 
 .carousel-box p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #333;
 }
 
-/* === Arrow Styling === */
 .arrow {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  color: #333;
-  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* === Responsive Adjustments === */
+.arrow:hover {
+  background-color: #e8e8e8;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
+.cta-final {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #d2f7c1;
+}
+
 @media screen and (max-width: 768px) {
-  .carousel-container {
-    flex-direction: column;
-  }
   .arrow {
-    font-size: 1.5rem;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .left {
+    left: -5px;
+  }
+
+  .right {
+    right: -5px;
+  }
+
+  .carousel-box {
+    padding: 30px 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    text-align: center;
   }
 }
