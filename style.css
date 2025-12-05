@@ -84,6 +84,14 @@ footer {
   color: #fff;
 }
 
+.logo {
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .features {
