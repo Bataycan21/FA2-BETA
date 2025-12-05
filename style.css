@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: "your-image.png";
+  background-image: url("your-image.png"); /* fixed here */
   background-size: cover;        /* makes the image fill the screen */
   background-repeat: no-repeat;  /* prevents tiling */
   background-attachment: fixed;  /* keeps it fixed while scrolling */
@@ -9,7 +9,7 @@ body {
 }
 
 .hero {
-  background-image: "your-image.png";
+  background-image: url("your-image.png"); /* fixed here */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,8 +17,6 @@ body {
   padding: 60px 20px;
   text-align: center;
 }
-
-
 
 .hero .logo {
   width: 300px;
