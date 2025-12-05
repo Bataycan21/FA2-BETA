@@ -1,4 +1,9 @@
-.carousel {   background-color: #f1f1f1;   padding: 60px 20px; }
+/* === General Carousel Styling === */
+.carousel {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+}
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -9,6 +14,7 @@
   position: relative;
 }
 
+/* === Carousel Box Styling (New Design) === */
 .carousel-box {
   background-color: #f9f9f9;
   border: 2px dotted #ccc;
@@ -32,6 +38,7 @@
   color: #333;
 }
 
+/* === Arrow Styling === */
 .arrow {
   background-color: transparent;
   border: none;
@@ -41,6 +48,7 @@
   padding: 0 20px;
 }
 
+/* === Responsive Adjustments === */
 @media screen and (max-width: 768px) {
   .carousel-container {
     flex-direction: column;
