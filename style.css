@@ -25,20 +25,10 @@ body {
 }
 
 .hero p {
-  display: inline-block;
-  background-color: rgba(46, 125, 50, 0.1); /* light green background */
-  color: #2E7D32; /* dark green text */
-  font-size: 1.3rem;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 2px solid #2E7D32;
-  position: relative;
-}
-
-.hero p::before {
-  content: "🌿";  /* leaf icon before text */
-  margin-right: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: #2E4A3A;
 }
 
 
