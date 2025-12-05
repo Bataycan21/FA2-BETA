@@ -9,14 +9,16 @@ body {
 }
 
 .hero {
-  background-image: "your-image.png";
-  background-size: cover;
+  background-image: url("your-image.png"); 
+  background-size: cover;       
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+
   text-align: center;
   padding: 60px 20px;
 }
+
 
 .hero .logo {
   width: 300px;
