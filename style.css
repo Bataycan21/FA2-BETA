@@ -1,89 +1,33 @@
-/* style.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.6;
-  background-color: #85db81;
+.carousel {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
 }
 
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #f1f1d9, #f1f1d9);
-  color: white;
-}
-
-.cta {
-  padding: 15px 30px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #85db81;
-}
-
-.features {
+.carousel-container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-}
-
-.feature-card {
-  flex: 1 1 200px;
-  margin: 10px;
-  padding: 20px;
-  background: #a4e3a1;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.visual img {
-  width: 100%;
   max-width: 800px;
-  display: block;
-  margin: 40px auto;
-  border-radius: 10px;
-}
-
-.info {
-  padding: 50px 20px;
-}
-
-.info h2 {
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-.info ul, .info ol {
-  max-width: 600px;
   margin: 0 auto;
-  padding-left: 20px;
+  position: relative;
 }
 
-.cta-final {
+.carousel-slide {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 70px 20px;
-  background-color: #85db81;
+  flex: 1;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: #a4e3a1;
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0 20px;
 }
 
 .logo {
@@ -97,20 +41,12 @@ footer {
 }
 
 
-
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .features {
+  .carousel-container {
     flex-direction: column;
   }
-  .feature-card {
-    margin: 10px 0;
-  }
-  .hero {
-    padding: 60px 15px;
-  }
-  .cta {
-    width: 100%;
-    max-width: 250px;
+  .arrow {
+    font-size: 1.5rem;
+    padding: 10px;
   }
 }
