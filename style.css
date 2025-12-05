@@ -1,87 +1,66 @@
 body {
   margin: 0;
-  font-family: 'Poppins', Arial, sans-serif;
-  background-color: #e9fce4;
-  color: #2E4A3A;
+  font-family: Arial, sans-serif;
+  background-color: #d2f7c1;
 }
 
-/* === Hero Section === */
 .hero {
-  background: linear-gradient(180deg, #d2f7c1 0%, #e9fce4 100%);
+  background-color: #d2f7c1;
   text-align: center;
-  padding: 80px 20px;
-  border-bottom: 4px solid #b3e9a0;
+  padding: 60px 20px;
 }
 
 .hero .logo {
-  width: 150px;
-  margin-bottom: 20px;
+  width: 130px;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  margin-bottom: 25px;
-  font-weight: 500;
-  color: #2E4A3A;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .cta {
   background-color: #2E7D32;
   color: white;
   border: none;
-  padding: 14px 30px;
-  border-radius: 10px;
+  padding: 12px 25px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: 0.25s ease;
+  font-size: 1rem;
+  transition: 0.2s ease;
 }
 
 .cta:hover {
   background-color: #256628;
-  transform: translateY(-2px);
 }
 
-/* === Features Section === */
 .features {
-  padding: 50px 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  padding: 30px 20px;
   flex-wrap: wrap;
 }
 
 .feature-card {
   background: white;
-  padding: 25px 30px;
-  border-radius: 16px;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #2E4A3A;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  transition: 0.25s ease;
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
-}
-
-/* === Visual Section === */
 .visual {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .visual img {
-  max-width: 85%;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 90%;
+  border-radius: 12px;
 }
 
-/* === Carousel Section === */
 .carousel {
   background-color: #85db81;
   padding: 60px 20px;
@@ -148,28 +127,18 @@ body {
   right: -10px;
 }
 
-/* === Final CTA Section === */
 .cta-final {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
-.cta-final .cta {
-  font-size: 1.2rem;
-  padding: 15px 40px;
-}
-
-/* === Footer === */
 footer {
   text-align: center;
-  padding: 25px 20px;
+  padding: 20px;
+  font-size: 0.9rem;
   background-color: #d2f7c1;
-  border-top: 4px solid #b3e9a0;
-  font-weight: 500;
-  color: #2E4A3A;
 }
 
-/* === Responsive Adjustments === */
 @media screen and (max-width: 768px) {
   .arrow {
     width: 40px;
