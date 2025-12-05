@@ -2,22 +2,22 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-image: "your-image.png";
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-size: cover;        /* makes the image fill the screen */
+  background-repeat: no-repeat;  /* prevents tiling */
+  background-attachment: fixed;  /* keeps it fixed while scrolling */
+  background-position: center;   /* centers the image */
 }
 
 .hero {
-  background-image: "your-image.png"; 
-  background-size: cover;       
+  background-image: "your-image.png";
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
-  text-align: center;
   padding: 60px 20px;
+  text-align: center;
 }
+
 
 
 .hero .logo {
