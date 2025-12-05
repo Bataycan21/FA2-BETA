@@ -1,8 +1,7 @@
-/* === Global Page Styling === */
 body {
   margin: 0;
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: #e9fce4; /* soothing pale green */
+  background-color: #e9fce4;
   color: #2E4A3A;
 }
 
@@ -82,6 +81,73 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+/* === Carousel Section === */
+.carousel {
+  background-color: #85db81;
+  padding: 60px 20px;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.carousel-box {
+  background-color: #ffffff;
+  border: 2px dotted #c7c7c7;
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.carousel-box h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  color: #2E7D32;
+}
+
+.carousel-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.arrow:hover {
+  background-color: #e8e8e8;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
 /* === Final CTA Section === */
 .cta-final {
   text-align: center;
@@ -101,4 +167,30 @@ footer {
   border-top: 4px solid #b3e9a0;
   font-weight: 500;
   color: #2E4A3A;
+}
+
+/* === Responsive Adjustments === */
+@media screen and (max-width: 768px) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .left {
+    left: -5px;
+  }
+
+  .right {
+    right: -5px;
+  }
+
+  .carousel-box {
+    padding: 30px 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    text-align: center;
+  }
 }
