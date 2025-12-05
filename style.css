@@ -31,14 +31,15 @@ body {
 
 .features {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 50px 20px;
   background-color: #f9f9f9;
 }
 
 .feature-card {
-  flex: 1;
-  margin: 0 10px;
+  flex: 1 1 200px;
+  margin: 10px;
   padding: 20px;
   background: #ffffff;
   border: 1px solid #ddd;
@@ -57,12 +58,18 @@ body {
 
 .info {
   padding: 50px 20px;
-  text-align: center;
 }
 
 .info h2 {
   margin-bottom: 20px;
   color: #333;
+  text-align: center;
+}
+
+.info ul, .info ol {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .cta-final {
