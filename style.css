@@ -1,13 +1,21 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #d2f7c1;
+  background-image: url("your-image.jpg");
+  background-size: cover;        /* makes the image fill the screen */
+  background-repeat: no-repeat;  /* prevents tiling */
+  background-attachment: fixed;  /* keeps it fixed while scrolling */
+  background-position: center;   /* centers the image */
 }
 
 .hero {
-  background-color: #d2f7c1;
-  text-align: center;
+  background-image: url("your-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   padding: 60px 20px;
+  text-align: center;
 }
 
 .hero .logo {
