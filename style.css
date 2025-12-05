@@ -1,24 +1,23 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("your-image.png"); /* correct relative path */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url("your-image.png");
+  background-size: cover;        /* makes the image fill the screen */
+  background-repeat: no-repeat;  /* prevents tiling */
+  background-attachment: fixed;  /* keeps it fixed while scrolling */
+  background-position: center;   /* centers the image */
 }
 
 .hero {
-  position: relative;
-  background-image: url("your-image.png"); /* correct relative path */
+  background-image: url("your-image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   padding: 60px 20px;
   text-align: center;
-  color: #fff;
 }
+
 
 /* Optional: overlay to make text readable */
 .hero::before {
