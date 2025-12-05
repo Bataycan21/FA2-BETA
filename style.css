@@ -1,33 +1,73 @@
-.carousel {
-  background-color: #f1f1f1;
-  padding: 60px 20px;
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #85db81; /* Green background */
 }
 
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel-slide {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.hero {
   text-align: center;
-  flex: 1;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f1f1d9, #f1f1d9);
+  color: white;
 }
 
-.arrow {
-  background-color: transparent;
+.cta {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
   border: none;
-  font-size: 2rem;
+  border-radius: 5px;
   cursor: pointer;
-  color: #333;
-  padding: 0 20px;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #85db81;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.feature-card {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  background: #a4e3a1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.visual img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+
+.cta-final {
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #85db81;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #a4e3a1;
 }
 
 .logo {
@@ -40,13 +80,80 @@
   margin-right: auto;
 }
 
+/* Carousel Styling */
+.carousel {
+  background-color: #85db81; /* match body background */
+  padding: 60px 20px;
+}
+
+.carousel-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #a4e3a1; /* light green card */
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-content {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.carousel-content h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.carousel-content p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.arrow:hover {
+  color: #007bff;
+}
 
 @media screen and (max-width: 768px) {
-  .carousel-container {
+  .features {
     flex-direction: column;
+  }
+  .feature-card {
+    margin: 10px 0;
+  }
+  .hero {
+    padding: 60px 15px;
+  }
+  .cta {
+    width: 100%;
+    max-width: 250px;
+  }
+  .carousel-box {
+    flex-direction: column;
+    padding: 30px 15px;
   }
   .arrow {
     font-size: 1.5rem;
-    padding: 10px;
+    margin: 10px 0;
+  }
+  .carousel-content {
+    text-align: center;
+    padding: 0;
   }
 }
