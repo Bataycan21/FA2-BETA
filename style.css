@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: "your-image.png"; /* fixed here */
-  background-size: cover;        /* makes the image fill the screen */
-  background-repeat: no-repeat;  /* prevents tiling */
-  background-attachment: fixed;  /* keeps it fixed while scrolling */
-  background-position: center;   /* centers the image */
+  background-image: url("your-image.png"); /* correct relative path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .hero {
-  background-image: "your-image.png"; /* fixed here */
+  background-image: url("your-image.png"); /* correct relative path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
