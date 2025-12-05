@@ -24,66 +24,18 @@
     <img src="path-to-image.jpg" alt="GreenSense Dashboard Preview">
   </section>
 
-  <section class="info">
-    <h2>What Is GreenSense?</h2>
-    <p>
-      GreenSense is a smart platform designed to help small greenhouse farmers turn everyday transactions into valuable insights. 
-      It analyzes sales and expenses to show which crops are most profitable, reduce waste, and guide smarter planting and spending decisions.
-    </p>
-  </section>
-
-  <section class="info">
-    <h2>Why Farmers Need GreenSense</h2>
-    <ul>
-      <li>💸 Financial Blind Spots</li>
-      <li>🥬 Wasted Produce</li>
-      <li>💰 Cash Flow Challenges</li>
-      <li>📅 Planning Difficulties</li>
-    </ul>
-  </section>
-
-  <section class="info">
-    <h2>Benefits of Using GreenSense</h2>
-    <ul>
-      <li>✔ Save Money</li>
-      <li>✔ Reduce Waste</li>
-      <li>✔ Increase Profits</li>
-      <li>✔ Plan Better</li>
-      <li>✔ Peace of Mind</li>
-    </ul>
-  </section>
-
-  <section class="info">
-    <h2>Who Can Use GreenSense?</h2>
-    <p>
-      Perfect for small-scale greenhouse farmers, indoor farm operators, vertical farms, and anyone selling directly to markets, restaurants, or subscription customers.
-    </p>
-  </section>
-
-  <section class="info">
-    <h2>Why GreenSense is Different</h2>
-    <ul>
-      <li>🌱 Designed for small farms</li>
-      <li>🎯 Actionable insights</li>
-      <li>🤖 Smart but simple</li>
-    </ul>
-  </section>
-
-  <section class="info">
-    <h2>How Farmers Can Start</h2>
-    <ol>
-      <li>Sign up on the mobile app or website</li>
-      <li>Start logging purchases and sales</li>
-      <li>Let GreenSense analyze your data</li>
-      <li>Receive alerts, reports, and advice</li>
-    </ol>
-  </section>
-
-  <section class="info">
-    <h2>The Future with GreenSense</h2>
-    <p>
-      GreenSense plans to expand with IoT integration, crop demand forecasting, and personalized recommendations for planting schedules and crop selection.
-    </p>
+  <section class="carousel">
+    <div class="carousel-container">
+      <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+      <div class="carousel-slide" id="slide">
+        <h2>What Is GreenSense?</h2>
+        <p>
+          GreenSense is a smart platform designed to help small greenhouse farmers turn everyday transactions into valuable insights. 
+          It analyzes sales and expenses to know which crops are most profitable, reduce waste, and guide smart planting and pricing decisions.
+        </p>
+      </div>
+      <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    </div>
   </section>
 
   <section class="cta-final">
@@ -93,5 +45,55 @@
   <footer>
     <p>© 2025 GreenSense. All rights reserved.</p>
   </footer>
+
+  <script>
+    const slides = [
+      {
+        title: "What Is GreenSense?",
+        text: "GreenSense is a smart platform designed to help small greenhouse farmers turn everyday transactions into valuable insights. It analyzes sales and expenses to know which crops are most profitable, reduce waste, and guide smart planting and pricing decisions."
+      },
+      {
+        title: "Why Farmers Need GreenSense",
+        text: "Greenhouse farmers face financial blind spots, wasted produce, cash flow challenges, and planting difficulties. GreenSense helps solve these with data-driven insights."
+      },
+      {
+        title: "Benefits of Using GreenSense",
+        text: "Save money, reduce waste, increase profits, plan better, and gain peace of mind with GreenSense."
+      },
+      {
+        title: "Who Can Use GreenSense?",
+        text: "Perfect for small-scale greenhouse farmers, indoor farms, vertical farms, and direct-to-market growers."
+      },
+      {
+        title: "Why GreenSense is Different",
+        text: "Designed for small farms, focused on actionable insights, and powered by smart but simple AI."
+      },
+      {
+        title: "How Farmers Can Start",
+        text: "Sign up, log purchases and sales, let GreenSense analyze your data, and receive smart advice."
+      },
+      {
+        title: "The Future with GreenSense",
+        text: "GreenSense will expand with IoT integration, crop demand forecasting, and personalized planting recommendations."
+      }
+    ];
+
+    let currentSlide = 0;
+
+    function updateSlide() {
+      const slide = document.getElementById("slide");
+      slide.innerHTML = `<h2>${slides[currentSlide].title}</h2><p>${slides[currentSlide].text}</p>`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateSlide();
+    }
+  </script>
 </body>
 </html>
